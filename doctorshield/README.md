@@ -30,3 +30,9 @@ Generated portrait assets are retained on disk but are not used in transactional
 
 See ../docs/07-product-system-audit.md for the current audit and component contract.
 
+
+## Vercel deployment
+
+The portal is a static multi-page site. The repository-root vercel.json publishes doctorshield/dist; when the Vercel Root Directory is doctorshield, its vercel.json publishes dist. Both explicitly disable framework autodetection, install and build commands. Do not run server.mjs on Vercel: it is only the local preview server.
+
+Production entry points: /, /design-system.html and /services.html. Use /?sample=1 for simulated journeys. No backend credentials are required for the frontend.
