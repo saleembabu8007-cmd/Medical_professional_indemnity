@@ -1,0 +1,54 @@
+:root{
+ /* Primitive brand palette. Keep product colors independent from state roles. */
+ --brand-primary:#08A5B5;--brand-secondary:#132766;
+ /* Semantic surfaces and content */
+ --surface-page:#F3F6F6;--surface-default:#FFFFFF;--surface-subtle:#F3F6F7;
+ --surface-selection:#F0FAFA;--surface-control:#FFFFFF;
+ --content-primary:#172536;--content-secondary:#607080;--content-heading:#132766;
+ --content-action:#006D78;--content-on-action:#082F40;
+ --border-default:#E3E7EC;--border-control:#8796A5;--border-selection:#007E89;
+ --action-primary:#08A5B5;--action-hover:#20B3C0;--action-pressed:#0794A2;
+ --focus-outline:#132766;--focus-halo:0 0 0 4px #08A5B51A;
+ --state-danger-border:#EBCDD1;--state-success-border:#CFE3D6;--state-warning-border:#E8DCC4;--state-info-border:#D6E2EC;
+ --state-danger:#A52A38;--state-danger-surface:#FFF4F4;
+ --state-success:#216147;--state-success-surface:#EFF8F2;
+ --state-warning:#805713;--state-warning-surface:#FFF8E8;
+ --state-info:#244B78;--state-info-surface:#F1F6FA;
+ --state-disabled:#72808D;--state-disabled-surface:#F0F2F5;
+ /* Type roles */
+ --font-heading:'Kanit',sans-serif;--font-body:'Inter',sans-serif;
+ --text-title:30px;--text-heading:22px;--text-section:18px;--text-subheading:16px;
+ --text-body:15px;--text-label:13px;--text-caption:12px;--text-small:13px;
+ --leading-heading:1.3;--leading-body:1.65;--leading-control:1.5;
+ --weight-regular:400;--weight-medium:500;--weight-semibold:600;
+ --tracking-heading:-.018em;--tracking-label:0;
+ /* Spacing: 4px base; section separation is larger than internal field rhythm. */
+ --space-1:4px;--space-2:8px;--space-3:12px;--space-4:16px;--space-5:20px;
+ --space-6:24px;--space-8:32px;--space-10:40px;--space-12:48px;--space-16:64px;
+ /* Component and composition contracts */
+ --measure-copy:65ch;--measure-form:720px;--review-label-width:40%;
+ --radius-small:6px;--radius-control:8px;--radius-panel:12px;--radius-pill:999px;
+ --control-height:46px;--field-padding-inline:12px;--choice-padding:16px;--group-padding:16px;--group-radius:10px;--section-rule:var(--border-default);--target-min:44px;--page-width:1200px;--rail-width:224px;
+ --layout-gap:32px;--panel-padding:28px;--page-gutter:32px;
+ --field-gap:20px;--section-gap:24px;--choice-gap:8px;--border-interactive:var(--border-control);--action-bar-clearance:128px;--shadow-panel:none;
+ --shadow-dialog:0 24px 80px #13276624;--shadow-popover:0 12px 32px #13276614;
+ --shadow-action:0 -8px 24px #13276605;--motion-fast:140ms;--motion-standard:200ms;
+ --ease-standard:cubic-bezier(.2,0,0,1);--backdrop:#17253666;
+ /* Compatibility aliases: all application components resolve semantic roles. */
+ --teal:var(--brand-primary);--navy:var(--content-heading);--on-primary:var(--content-on-action);
+ --primary-hover:var(--action-hover);--primary-pressed:var(--action-pressed);
+ --canvas:var(--surface-page);--surface:var(--surface-default);--surface-muted:var(--surface-subtle);
+ --surface-selected:var(--surface-selection);--teal-light:var(--surface-selection);
+ --text:var(--content-primary);--muted:var(--content-secondary);--link:var(--content-action);
+ --line:var(--border-default);--border-subtle:var(--border-default);--control-border:var(--border-control);
+ --border-selected:var(--border-selection);--selected-line:#A3D4D8;
+ --focus-color:var(--focus-outline);--focus-ring:var(--focus-halo);
+ --danger:var(--state-danger);--danger-surface:var(--state-danger-surface);
+ --success:var(--state-success);--success-surface:var(--state-success-surface);
+ --warning:var(--state-warning);--warning-surface:var(--state-warning-surface);
+ --info:var(--state-info);--info-surface:var(--state-info-surface);
+ --disabled-text:var(--state-disabled);--disabled-surface:var(--state-disabled-surface);--disabled-border:var(--border-default);
+ --placeholder:#6C7986;--surface-readonly:var(--surface-subtle);--surface-hover:var(--surface-subtle);
+ --selection:#C5EEF0;--text-inverse:#FFFFFF;--control-hover:#526D7C;--control-filled:var(--surface-subtle);
+ --rail-text:#D0DBF0;--rail-accent:#81DFE6;--rail-border:#526699;--rail-surface:#253B76;
+}
